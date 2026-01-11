@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11VEN | Not Just a Number</title>
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="11VEN | Not Just a Number">
+  <meta name="description" content="High-grade silhouettes for the new vanguard. 11VEN blends brutalist aesthetics with premium craftsmanship to create garments that are not just worn, but lived.">
+  <meta name="keywords" content="11VEN, streetwear, fashion, premium clothing, brutalist aesthetics, exclusive drops, fashion brand">
+  <meta name="author" content="11VEN">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/favicon.png">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://11ven.com/">
+  <meta property="og:title" content="11VEN | Not Just a Number">
+  <meta property="og:description" content="Engineered for the Architects of Streetwear. High-grade silhouettes for the new vanguard. Join the Plug List for exclusive access to drops before they go public.">
+  <meta property="og:image" content="/favicon.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="11VEN Logo">
+  <meta property="og:site_name" content="11VEN">
+  <meta property="og:locale" content="en_US">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://11ven.com/">
+  <meta name="twitter:title" content="11VEN | Not Just a Number">
+  <meta name="twitter:description" content="Engineered for the Architects of Streetwear. High-grade silhouettes for the new vanguard. Join the Plug List for exclusive access.">
+  <meta name="twitter:image" content="/favicon.png">
+  <meta name="twitter:image:alt" content="11VEN Logo">
+  <meta name="twitter:creator" content="@theofficial11ven">
+  
+  <!-- Additional Meta Tags -->
+  <meta name="theme-color" content="#050505">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="https://11ven.com/">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Plus+Jakarta+Sans:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --lime: #D9FF80;
+      --deep-black: #050505;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--deep-black);
+      color: white;
+      margin: 0;
+      overflow-x: hidden;
+      cursor: crosshair;
+    }
+    @media (hover: none) {
+      body { cursor: auto; }
+    }
+    .font-tech {
+      font-family: 'Syncopate', sans-serif;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .text-lime-brand {
+      color: var(--lime);
+    }
+    .bg-lime-brand {
+      background-color: var(--lime);
+    }
+    
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    /* 2030 3D Animation Utilities */
+    @keyframes float {
+      0%, 100% { transform: translateY(0px) rotateX(0deg); }
+      50% { transform: translateY(-15px) rotateX(3deg); }
+    }
+    .animate-float {
+      animation: float 6s ease-in-out infinite;
+    }
+    
+    .glow-lime {
+      text-shadow: 0 0 30px rgba(217, 255, 128, 0.4);
+    }
+
+    .perspective-container {
+      perspective: 1000px;
+    }
+    
+    .scanning-line {
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--lime), transparent);
+      animation: scan 4s linear infinite;
+    }
+    
+    @keyframes scan {
+      0% { top: 0; opacity: 0; }
+      50% { opacity: 1; }
+      100% { top: 100%; opacity: 0; }
+    }
+
+    /* Loader Specific Animations */
+    @keyframes glitch {
+      0% { transform: translate(0); text-shadow: none; }
+      20% { transform: translate(-2px, 2px); text-shadow: 2px 0 var(--lime); }
+      40% { transform: translate(-2px, -2px); text-shadow: -2px 0 #fff; }
+      60% { transform: translate(2px, 2px); text-shadow: 2px 0 var(--lime); }
+      80% { transform: translate(2px, -2px); text-shadow: -2px 0 #fff; }
+      100% { transform: translate(0); text-shadow: none; }
+    }
+    .animate-glitch {
+      animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
+    }
+
+    @keyframes reveal {
+      from { transform: scaleX(0); }
+      to { transform: scaleX(1); }
+    }
+    .animate-reveal {
+      animation: reveal 1.0s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+      transform-origin: left;
+    }
+
+    @keyframes fadeOutUp {
+      from { opacity: 1; transform: translateY(0); }
+      to { opacity: 0; transform: translateY(-20px); }
+    }
+    .loader-fade-out {
+      animation: fadeOutUp 0.6s ease-in-out forwards;
+    }
+
+    /* Selection Color */
+    ::selection {
+      background: var(--lime);
+      color: var(--deep-black);
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+</head>
+<body>
+  <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
