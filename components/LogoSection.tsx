@@ -22,7 +22,7 @@ const LogoSection: React.FC = () => {
             <div className="absolute -bottom-4 -left-4 md:-bottom-8 md:-left-8 w-8 h-8 md:w-16 md:h-16 border-b-2 border-l-2 border-lime-brand/30 transition-all duration-500 group-hover:border-lime-brand" />
 
             <h1 className="font-tech text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[11rem] font-bold text-white tracking-tighter leading-none mb-0 drop-shadow-[0_0_20px_rgba(255,255,255,0.05)]">
-              11<span className="text-lime-brand">VEN</span>
+              11<span className="text-lime-brand">ven</span>
             </h1>
             
             {/* Holographic Scan Effect */}
