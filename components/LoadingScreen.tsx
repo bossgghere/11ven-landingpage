@@ -14,8 +14,8 @@ const LoadingScreen: React.FC<LoadingScreenProps> = () => {
       <div className="relative flex flex-col items-center">
         {/* Animated Text */}
         <div className="overflow-hidden mb-4">
-          <h1 className="font-tech text-5xl md:text-7xl font-bold text-lime-brand tracking-[0.5em] animate-glitch uppercase">
-            11VEN
+          <h1 className="font-tech text-5xl md:text-7xl font-bold text-lime-brand tracking-[0.5em] animate-glitch">
+            11ven
           </h1>
         </div>
 
