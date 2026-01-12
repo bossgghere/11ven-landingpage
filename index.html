@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,44 +37,57 @@
   <meta name="twitter:creator" content="@theofficial11ven">
   
   <!-- Additional Meta Tags -->
-  <meta name="theme-color" content="#050505">
-  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="color-scheme" content="light">
   <link rel="canonical" href="https://11ven.com/">
   
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Plus+Jakarta+Sans:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --lime: #D9FF80;
-      --deep-black: #050505;
+      --bg: #000000;
+      --fg: #ffffff;
+      --accent: #ffffff;
+      --border: rgba(255, 255, 255, 0.1);
+      --glass-bg: rgba(255, 255, 255, 0.05);
     }
+
+    [data-theme='light'] {
+      --bg: #ffffff;
+      --fg: #000000;
+      --accent: #000000;
+      --border: rgba(0, 0, 0, 0.1);
+      --glass-bg: rgba(0, 0, 0, 0.03);
+    }
+
     body {
       font-family: 'Plus Jakarta Sans', sans-serif;
-      background-color: var(--deep-black);
-      color: white;
+      background-color: var(--bg);
+      color: var(--fg);
       margin: 0;
       overflow-x: hidden;
-      cursor: crosshair;
+      transition: background-color 0.5s ease, color 0.5s ease;
     }
-    @media (hover: none) {
-      body { cursor: auto; }
-    }
+
     .font-tech {
       font-family: 'Syncopate', sans-serif;
     }
+
+    .font-italic-heading {
+      font-family: 'Playfair Display', serif;
+    }
+
     .glass {
-      background: rgba(255, 255, 255, 0.03);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.05);
+      background: var(--glass-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--border);
     }
-    .text-lime-brand {
-      color: var(--lime);
-    }
-    .bg-lime-brand {
-      background-color: var(--lime);
+
+    .border-main {
+      border-color: var(--border);
     }
     
     .no-scrollbar::-webkit-scrollbar {
@@ -86,48 +98,43 @@
       scrollbar-width: none;
     }
 
-    /* 2030 3D Animation Utilities */
     @keyframes float {
-      0%, 100% { transform: translateY(0px) rotateX(0deg); }
-      50% { transform: translateY(-15px) rotateX(3deg); }
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
     }
     .animate-float {
-      animation: float 6s ease-in-out infinite;
-    }
-    
-    .glow-lime {
-      text-shadow: 0 0 30px rgba(217, 255, 128, 0.4);
+      animation: float 4s ease-in-out infinite;
     }
 
-    .perspective-container {
-      perspective: 1000px;
+    .streetwear-shadow {
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
     }
-    
-    .scanning-line {
-      position: absolute;
+
+    /* Selection Color */
+    ::selection {
+      background: var(--fg);
+      color: var(--bg);
+    }
+
+    .noise-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
       width: 100%;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, var(--lime), transparent);
-      animation: scan 4s linear infinite;
-    }
-    
-    @keyframes scan {
-      0% { top: 0; opacity: 0; }
-      50% { opacity: 1; }
-      100% { top: 100%; opacity: 0; }
+      height: 100%;
+      content: "";
+      opacity: 0.03;
+      z-index: 100;
+      pointer-events: none;
+      background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
     }
 
-    /* Loader Specific Animations */
-    @keyframes glitch {
-      0% { transform: translate(0); text-shadow: none; }
-      20% { transform: translate(-2px, 2px); text-shadow: 2px 0 var(--lime); }
-      40% { transform: translate(-2px, -2px); text-shadow: -2px 0 #fff; }
-      60% { transform: translate(2px, 2px); text-shadow: 2px 0 var(--lime); }
-      80% { transform: translate(2px, -2px); text-shadow: -2px 0 #fff; }
-      100% { transform: translate(0); text-shadow: none; }
+    .logo-script {
+       filter: drop-shadow(0 0 5px rgba(255,255,255,0.1));
     }
-    .animate-glitch {
-      animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
+
+    [data-theme='light'] .logo-script {
+       filter: drop-shadow(0 0 5px rgba(0,0,0,0.1));
     }
 
     @keyframes reveal {
@@ -137,20 +144,6 @@
     .animate-reveal {
       animation: reveal 1.0s cubic-bezier(0.19, 1, 0.22, 1) forwards;
       transform-origin: left;
-    }
-
-    @keyframes fadeOutUp {
-      from { opacity: 1; transform: translateY(0); }
-      to { opacity: 0; transform: translateY(-20px); }
-    }
-    .loader-fade-out {
-      animation: fadeOutUp 0.6s ease-in-out forwards;
-    }
-
-    /* Selection Color */
-    ::selection {
-      background: var(--lime);
-      color: var(--deep-black);
     }
   </style>
 <script type="importmap">
@@ -164,7 +157,8 @@
 }
 </script>
 </head>
-<body>
+<body data-theme="light">
+  <div class="noise-bg"></div>
   <div id="root"></div>
 <script type="module" src="/index.tsx"></script>
 </body>
