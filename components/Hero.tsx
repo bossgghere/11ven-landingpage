@@ -16,7 +16,7 @@ const Hero: React.FC<HeroProps> = ({ theme }) => {
         </h1>
         
         <p className="font-tech text-[10px] md:text-sm tracking-[1em] opacity-40 uppercase mb-20">
-          Not Just a Number.
+          The brand.
         </p>
 
         <div className="space-y-8 flex flex-col items-center">
