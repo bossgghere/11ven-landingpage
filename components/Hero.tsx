@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { ArrowDown } from 'lucide-react';
 
 interface HeroProps {
   theme: 'dark' | 'light';
@@ -29,13 +28,16 @@ const Hero: React.FC<HeroProps> = ({ theme }) => {
           <p className="text-sm md:text-base opacity-50 font-light leading-relaxed max-w-md mx-auto">
             Architecting  silhouettes  for  the  modern  vanguard. 11VEN  blends  minimalist  brutalism  with  technical  precision  to  define  the  future of  high-performance  apparel.
           </p>
+          
+          <a 
+            href="https://app.11ven.store" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="mt-8 px-8 py-4 bg-[var(--fg)] text-[var(--bg)] font-bold tracking-wider uppercase text-sm hover:opacity-90 transition-opacity duration-300"
+          >
+            Buy Now
+          </a>
         </div>
-      </div>
-
-      {/* Scroll Hint */}
-      <div className="absolute bottom-12 flex flex-col items-center gap-4 opacity-20">
-        <span className="font-tech text-[8px] tracking-[0.4em] uppercase">Explore_Catalog</span>
-        <ArrowDown size={16} className="animate-bounce" />
       </div>
     </div>
   );

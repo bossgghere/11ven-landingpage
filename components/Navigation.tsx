@@ -12,7 +12,6 @@ const Navigation: React.FC<NavigationProps> = ({ theme, toggleTheme }) => {
     <header className="fixed top-0 left-0 w-full z-50 border-b border-main glass h-20 flex items-center px-6 md:px-12">
       <div className="w-1/3 flex items-center">
         <nav className="hidden md:flex gap-10">
-          <a href="#collections" className="text-[10px] font-tech tracking-[0.4em] opacity-40 hover:opacity-100 transition-opacity uppercase">Drops</a>
           <a href="#connect" className="text-[10px] font-tech tracking-[0.4em] opacity-40 hover:opacity-100 transition-opacity uppercase">Connect</a>
         </nav>
       </div>

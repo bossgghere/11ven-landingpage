@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
-import Collections from './components/Collections';
 import Connect from './components/Connect';
 import Footer from './components/Footer';
 import LoadingScreen from './components/LoadingScreen';
@@ -44,11 +43,6 @@ const App: React.FC = () => {
         {/* Brand Hero - Centered Intro */}
         <section id="home">
           <Hero theme={theme} />
-        </section>
-
-        {/* Catalog Section - Stacked below Hero */}
-        <section id="collections" className="py-20 md:py-32 border-t border-main">
-          <Collections />
         </section>
 
         {/* Join/Connect Section - Centered */}
