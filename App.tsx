@@ -5,6 +5,12 @@ import Hero from './components/Hero';
 import Connect from './components/Connect';
 import Footer from './components/Footer';
 import LoadingScreen from './components/LoadingScreen';
+import TermsConditions from './components/TermsConditions';
+import PrivacyPolicy from './components/PrivacyPolicy';
+import ReturnRefundPolicy from './components/ReturnRefundPolicy';
+import CancellationPolicy from './components/CancellationPolicy';
+import ShippingPolicy from './components/ShippingPolicy';
+import AboutUs from './components/AboutUs';
 
 const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -48,6 +54,31 @@ const App: React.FC = () => {
         {/* Join/Connect Section - Centered */}
         <section id="connect" className="py-32 md:py-52 bg-[var(--bg)] flex items-center justify-center border-t border-main">
           <Connect />
+        </section>
+
+        {/* Policy Pages */}
+        <section id="terms" className="border-t border-main">
+          <TermsConditions />
+        </section>
+
+        <section id="privacy" className="border-t border-main">
+          <PrivacyPolicy />
+        </section>
+
+        <section id="return-refund" className="border-t border-main">
+          <ReturnRefundPolicy />
+        </section>
+
+        <section id="cancellation" className="border-t border-main">
+          <CancellationPolicy />
+        </section>
+
+        <section id="shipping" className="border-t border-main">
+          <ShippingPolicy />
+        </section>
+
+        <section id="about" className="border-t border-main">
+          <AboutUs />
         </section>
 
         {/* Final Footer */}

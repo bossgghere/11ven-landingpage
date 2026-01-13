@@ -23,6 +23,17 @@ const Footer: React.FC<FooterProps> = ({ theme }) => {
             <div className="space-y-4">
               <a href="mailto:theofficial11ven@gmail.com" className="text-xs block hover:opacity-60 transition-opacity tracking-wider uppercase">theofficial11ven@gmail.com</a>
               <p className="text-[10px] font-tech tracking-widest opacity-40 uppercase">HUB_STATION_011 // SEOUL_TX</p>
+              <div className="mt-4 space-y-2">
+                <p className="text-[9px] font-tech tracking-widest opacity-40 uppercase">Registered Address:</p>
+                <p className="text-[9px] opacity-50 leading-relaxed">
+                  Tribikram Prasad Sahoo<br/>
+                  Flat No: 1-10-88/S2<br/>
+                  Priya Residency<br/>
+                  J J Nagar Colony<br/>
+                  Alwal, Hyderabad<br/>
+                  Telangana - 500010
+                </p>
+              </div>
             </div>
           </div>
           <div className="flex flex-col gap-6">
@@ -37,9 +48,13 @@ const Footer: React.FC<FooterProps> = ({ theme }) => {
         <div className="mt-32 pt-8 border-t border-main/30 flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="flex flex-col md:flex-row gap-4 md:gap-12 items-center">
             <p className="text-[9px] font-tech tracking-widest opacity-20 uppercase">© 11VEN PROJECT_2024</p>
-            <div className="flex gap-8">
-               <a href="#" className="text-[9px] font-tech tracking-widest opacity-20 hover:opacity-100 uppercase transition-opacity">Privacy</a>
-               <a href="#" className="text-[9px] font-tech tracking-widest opacity-20 hover:opacity-100 uppercase transition-opacity">Terms</a>
+            <div className="flex flex-wrap gap-4 md:gap-8 justify-center">
+               <a href="#terms" className="text-[9px] font-tech tracking-widest opacity-20 hover:opacity-100 uppercase transition-opacity">Terms</a>
+               <a href="#privacy" className="text-[9px] font-tech tracking-widest opacity-20 hover:opacity-100 uppercase transition-opacity">Privacy</a>
+               <a href="#return-refund" className="text-[9px] font-tech tracking-widest opacity-20 hover:opacity-100 uppercase transition-opacity">Returns</a>
+               <a href="#cancellation" className="text-[9px] font-tech tracking-widest opacity-20 hover:opacity-100 uppercase transition-opacity">Cancellation</a>
+               <a href="#shipping" className="text-[9px] font-tech tracking-widest opacity-20 hover:opacity-100 uppercase transition-opacity">Shipping</a>
+               <a href="#about" className="text-[9px] font-tech tracking-widest opacity-20 hover:opacity-100 uppercase transition-opacity">About</a>
             </div>
           </div>
           <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex items-center gap-4 text-[9px] font-tech tracking-[0.4em] opacity-20 hover:opacity-100 uppercase transition-all">

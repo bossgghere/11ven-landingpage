@@ -7,7 +7,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ theme }) => {
   return (
-    <div className="relative min-h-screen flex flex-col items-center justify-center pt-20 px-6 text-center">
+    <div className="relative min-h-screen flex flex-col items-center justify-center pt-32 md:pt-36 px-6 text-center">
       {/* Brand Identity Stack */}
       <div className="max-w-4xl animate-in fade-in zoom-in duration-1000">
         <h1 className="text-8xl md:text-9xl lg:text-[13rem] font-italic-heading leading-none logo-script mb-8 select-none">
