@@ -120,7 +120,7 @@ Also update:
 - **EmailJS Template ID:** `template_bhqtm9a`
 - **EmailJS Public Key:** `K-XZ8noys6Kk6kwPq`
 - **WhatsApp:** `917416723763`
-- **Instagram:** `@theofficial11ven`
+- **Instagram:** `@11ven_store`
 - **Email:** `theofficial11ven@gmail.com`
 
 **You're all set! 🚀**

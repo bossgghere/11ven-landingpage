@@ -180,7 +180,7 @@ const MainContent: React.FC = () => {
         <div className="flex flex-col gap-3 sm:gap-4">
           <h4 className="text-[9px] sm:text-[10px] font-tech tracking-[0.4em] text-white/30 uppercase">Sync Frequency</h4>
           <div className="flex gap-3 sm:gap-4">
-            <a href="https://instagram.com/theofficial11ven" target="_blank" rel="noopener noreferrer" className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-xl sm:rounded-2xl glass hover:bg-lime-brand hover:text-black transition-all group">
+            <a href="https://instagram.com/11ven_store" target="_blank" rel="noopener noreferrer" className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-xl sm:rounded-2xl glass hover:bg-lime-brand hover:text-black transition-all group">
               <Instagram size={16} sm:size={18} className="group-hover:rotate-6 transition-transform" />
             </a>
             <a href="mailto:theofficial11ven@gmail.com" className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-xl sm:rounded-2xl glass hover:bg-lime-brand hover:text-black transition-all group">
